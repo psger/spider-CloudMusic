@@ -1,5 +1,5 @@
 {
-  "name": "lesson5",
+  "name": "cloudmusic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
   "dependencies": {
     "async": "^2.5.0",
     "cheerio": "^1.0.0-rc.2",
-    "eventproxy": "^1.0.0",
+    "mysql": "^2.14.1",
     "superagent": "^3.6.0"
   }
 }
