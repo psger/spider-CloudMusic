@@ -4,6 +4,42 @@ const singerConfig = {
         title: '华语男歌手',
         category: '华语',
         id: '1001'
+    }, {
+        title: '华语女歌手',
+        category: '华语',
+        id: '1002'
+    }, {
+        title: '华语组合/乐队',
+        category: '华语',
+        id: '1003'
+    }, {
+        title: '欧美男歌手',
+        category: '欧美',
+        id: '2001'
+    }, {
+        title: '欧美女歌手',
+        category: '欧美',
+        id: '2002'
+    }, {
+        title: '欧美组合/乐队',
+        category: '欧美',
+        id: '2003'
+    }, {
+        title: '日本男歌手',
+        category: '日本',
+        id: '6001'
+    }, {
+        title: '日本女歌手',
+        category: '日本',
+        id: '6002'
+    },{
+        title: '其他女歌手',
+        category: '其他',
+        id: '4002'
+    }, {
+        title: '其他组合/乐队',
+        category: '其他',
+        id: '4003'
     }],
     queue:[]
 }
@@ -12,7 +48,7 @@ for(let index=65;index<=90;index++){
         index,
         letter:String.fromCharCode(index)
     })
-}//字符串中的每个字符都由单独的数字 Unicode 编码指定。这段循环就是把65-90所表示的字母存入queue中
+}
 singerConfig.queue.push({
     index:0,
     letter:'其他'

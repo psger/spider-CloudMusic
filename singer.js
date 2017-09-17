@@ -1,5 +1,5 @@
 const {
-	singerCollect
-} =require('./code');
+    singerCollect
+} = require('./code');
 
 singerCollect();
