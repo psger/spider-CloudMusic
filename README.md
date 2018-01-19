@@ -28,15 +28,15 @@
 
 歌手信息
 <br/>
-<img width=400 src='./img/singer-demo.png'/>
+<img width=400 src='./1.png'/>
 
 歌曲信息
 <br/>
-<img width=400 src='./img/song-demo.png'/>
+<img width=400 src='./2.png'/>
 
 评论信息
 <br/>
-<img width=400 src='./img/commen-demo.png'/>
+<img width=400 src='./3.png'/>
 
 ## 项目结构
 
