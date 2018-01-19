@@ -1,5 +1,5 @@
-const async = require('async');
-const agent = require('superagent');
+const async = require('async');//异步流程控制
+const agent = require('superagent');//superagent它是一个强大并且可读性很好的轻量级ajaxAPI
 const cheerio = require('cheerio');
 const moment = require('moment');
 const request = require('request');
@@ -34,8 +34,8 @@ function jsonDateFormat(jsonDate) {//json日期格式转换为正常格式
 
 const songCollect = () => {
     query('select min(singer) from song', [], (err, res, rs) => {
-        let index = 80244//res[0]['min(singer)'] || 0;
-        async.whilst(() => {
+        let index = 31253//res[0]['min(singer)'] || 0;
+        async.whilst(() => {//whilst：while循环执行任务，但本次任务执行完毕后才会进入下一次循环，每次只循环一个歌手
             return index >= 31252;
         }, (cb) => {
             // 从数据库中获取歌手姓名以及URL 然后开始遍历歌曲
@@ -48,10 +48,9 @@ const songCollect = () => {
                     agent(songConfig.common + singer.url)
                         .then(res => {
                             const $ = cheerio.load(res.text);
-                            const content = $('#song-list-pre-cache textarea');
-                                                  
+                            const content = $('#song-list-pre-cache textarea');                                               
                             const song = JSON.parse(content.text());
-                            limitLength(song, songConfig.len);
+                            limitLength(song, songConfig.len);//取到每一个歌手多少首歌了  song是一个数组
 
                             async.mapLimit(song, 10, (item, cbItem) => { // 并发数量N
                                 // 遍历前N首歌曲 并且获取评论数量
@@ -83,7 +82,6 @@ const songCollect = () => {
                                                     }
                                                 })  
                                             }
-
                                         
                                         query('insert into song(title,comment,url,name,singer) values(?,?,?,?,?)', [title, commet, href, singer.name, index], (err, response) => {
                                             if (err) {
@@ -135,4 +133,4 @@ const songCollect = () => {
     })
 
 }
-module.exports = songCollect;
+module.exports = songCollect;//为了将函数直接导出成模块，而不是模块的一个方法
