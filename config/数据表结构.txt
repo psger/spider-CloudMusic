@@ -9,7 +9,7 @@ CREATE TABLE `singer` (
   `initial` char(255) DEFAULT NULL COMMENT '首字母参数',
   PRIMARY KEY (`singer`),
   UNIQUE KEY `url` (`url`)
-) ENGINE=InnoDB AUTO_INCREMENT=31253 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31253 DEFAULT CHARSET=utf8mb4;
 
 --------------------------------------------------------------
 
@@ -36,5 +36,5 @@ CREATE TABLE `comment` (
   `user_name` char(255) DEFAULT NULL COMMENT '评论者',
   `user_id` int(20) DEFAULT NULL COMMENT '用户ID',
   `comm_time` datetime DEFAULT NULL COMMENT '评论时间',
-  PRIMARY KEY (`comm_id`)  
-) ENGINE=InnoDB AUTO_INCREMENT=158322 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`comm_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=158322 DEFAULT CHARSET=utf8mb4;

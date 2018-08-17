@@ -29,8 +29,8 @@ const songConfig = {
     comment: 'https://music.163.com/weapi/v1/resource/comments/',
     len: 10,
     key: {
-        encSecKey: '2af4ca51b906def2e80755a34450db64e8a34f038ffa7ee66ae4c50fbaacc785eddcc1a63222928af3814c355f20b7f8d4e4b05f26879087acd1f8a4da79adaa4a59e3efb54c135017d7f94f7514603e208b0178f547f436c9ca11a3f45e27876c81c3f0a5d3a82854b9d39fdee0ac1b16ecd23503908595fc48359e0811f6d6',
-        params: 'DQU/eyfHyqpTa40dLoNsxkRxCEmEsIgzAgKEYce7d5o78+o4DrdquhuTE5/h5PWqI027kSWd4Y1c9/h6mQFX8J9KiGI0zhV7hb6F7JzXjmg2wtky3SXDoXDn2IYKQnoF4mSXfjGtJdL9kA0KmJvNow=='
+        encSecKey: '2bf74d711ac89fff8fc649df97b51ddafdddb000ca3a9957996cff7c7685ee5d6d38f661af279fc222d12504b7352fe7a06ab5c3e45dbbd62611138f4bb7343637e5f853546f03381f88bdca26a47595f2e39220e5d7148c3323872006f549d6f127f277cd49788f9336959e6750ff6b30817833e3688064353f95307aca1cff',
+        params: 'DgXTc+7N2IYwst0dewY9GhtQO0BGF2SOMPMLFna/A01LPlJIakYOOG+qbsZXhygDoZ07hsLbv8uPzXP93BHpI8766NIBDoYoY48UdUJGy0AGg/Rr10OWoLmFDHHQnA8IjcodbRkiSlYKFmvSLqcLxtSo+65m1JT8EeFotahdphPWtCencIlGqMWDNMj+kft7'
     },
     agent:randomUserAgent(),
 }
